@@ -8,7 +8,7 @@ This repo is modified from https://github.com/insaneyilin/document_scanner, and 
 
 ## Usage
 
-- GUI - image rotation, binarization, edge detection, dilation/erosion, automatic/manual doc scanner, and .pdf to .png conversion:
+- GUI - image rotation, binarization, edge detection, dilation/erosion, automatic/manual doc scanner, and pdf to png conversion:
   ```
   python OCR_preprocessing_tool.py
   ```
@@ -53,39 +53,39 @@ pip install -r requirements.txt
 
 ### Rotation
 
-
+<div align=center><img src="https://github.com/RangeKing/OCR_preprocessing_tool/blob/main/demo/rotation.gif"></div>
 
 ### Binarization
 
-
+<div align=center><img src="https://github.com/RangeKing/OCR_preprocessing_tool/blob/main/demo/binarization.gif"></div>
 
 ### Edge detection
 
-
+<div align=center><img src="https://github.com/RangeKing/OCR_preprocessing_tool/blob/main/demo/find_edges.gif"></div>
 
 ### Erosion
 
-
+<div align=center><img src="https://github.com/RangeKing/OCR_preprocessing_tool/blob/main/demo/erosion.gif"></div>
 
 ### Dilation
 
-
+<div align=center><img src="https://github.com/RangeKing/OCR_preprocessing_tool/blob/main/demo/dilation.gif"></div>
 
 ### Select corners manually
 
-
+<div align=center><img src="https://github.com/RangeKing/OCR_preprocessing_tool/blob/main/demo/select_corners_manually.gif"></div>
 
 ### Auto detection (not very robust)
 
-
+<div align=center><img src="https://github.com/RangeKing/OCR_preprocessing_tool/blob/main/demo/auto_detection.gif"></div>
 
 ### Text enhancement (after applying perspective transform)
 
+<div align=center><img src="https://github.com/RangeKing/OCR_preprocessing_tool/blob/main/demo/text_enhancement.gif"></div>
 
+### Conversion of pdf to png 
 
-### Conversion of .pdf to .png 
-
-
+<div align=center><img src="https://github.com/RangeKing/OCR_preprocessing_tool/blob/main/demo/pdf_to_png.gif"></div>
 
 ---
 
