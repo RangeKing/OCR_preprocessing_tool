@@ -8,7 +8,7 @@ This repo is modified from https://github.com/insaneyilin/document_scanner, and 
 
 ## Usage
 
-- GUI - image rotation, binarization, edge detection, dilation/erosion, automatic/manual doc scanner, and pdf to png conversion:
+- GUI - image rotation, binarization, edge detection, dilation/erosion, automatic/manual doc scanner, color inversion, and pdf to png conversion:
   ```
   python OCR_preprocessing_tool.py
   ```
