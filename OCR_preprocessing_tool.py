@@ -108,7 +108,8 @@ class ocrPreprocesWindow(object):
         rotation_menu.add_command(label="Rotate 90° Counterclockwise", command=self.image_rotation_90_COUNTERCLOCKWISE)
         tools_menu.add_command(label="Binarization", command=self.image_binarization)
         tools_menu.add_command(label="Erosion", command=self.image_erosion)
-        tools_menu.add_command(label="Dilation", command=self.image_dilation)        
+        tools_menu.add_command(label="Dilation", command=self.image_dilation)
+        tools_menu.add_command(label="Invert Colors", command=self.invert_colors)
         tools_menu.add_command(label="Find Edges", command=self.edge_detect)
         tools_menu.add_command(label="Restore Image", command=self.restore_image)
         menubar.add_cascade(label="Tools", menu=tools_menu)
@@ -231,6 +232,11 @@ class ocrPreprocesWindow(object):
         dilation = cv2.dilate(gray, kernel, iterations=1)
         self.cv_image = cv2.cvtColor(dilation, cv2.COLOR_GRAY2RGB)
         self.image = Image.fromarray(self.cv_image)
+        self.update()
+
+    def invert_colors(self):
+        inverted = 255 - np.asarray(self.image)
+        self.image = Image.fromarray(inverted)
         self.update()
 
     ## TODO rotate any degree
