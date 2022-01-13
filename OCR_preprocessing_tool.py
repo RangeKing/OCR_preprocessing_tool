@@ -3,6 +3,7 @@
 # @Original Author: yilin(https://github.com/insaneyilin/document_scanner)
 # Python version: 3.8
 # GUI reference: https://github.com/lancebeet/imagemicro
+# Tkinter theme: https://github.com/rdbende/Sun-Valley-ttk-theme
 
 import os
 import sys
@@ -14,6 +15,7 @@ from PIL import ImageTk
 
 import tkinter
 from tkinter import filedialog
+from tkinter import ttk
 import tkinter.messagebox
 from pdf2image import convert_from_path
 import numpy as np
@@ -354,6 +356,10 @@ if __name__ == '__main__':
 
     root = tkinter.Tk()
     root.title('Preprocess Tool for OCR')
+    
+    # Set the initial theme
+    root.tk.call("source", "sun-valley.tcl")
+    root.tk.call("set_theme", "light")
     
     doc_scan_window = ocrPreprocesWindow(root, image_filename)
     
